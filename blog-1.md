@@ -1,5 +1,5 @@
 
-**# <ins>Mastering Type Narrowing and Safe Data Handling in TypeScript</ins>**
+**# Mastering Type Narrowing and Safe Data Handling in TypeScript**
 
 # What is "any" in TypeScript?
 
