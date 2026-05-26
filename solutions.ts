@@ -48,3 +48,30 @@ const user ={
 }
 
 // console.log(getProperty(user,"name"));
+
+//Problem-----5
+
+interface Book{
+    title:string;
+    author:string;
+    publishedYear:number;
+};
+
+type read = Book & {isRead:boolean};
+
+const toggleReadStatus =(input:Book):read=>{
+    return {
+        ...input,
+        isRead:true,
+    };
+};
+
+const book={
+  title: "TypeScript Guide",
+  author: "Jane Doe",
+  publishedYear: 2024,
+  isRead: true
+}
+
+// console.log(toggleReadStatus(book));
+
