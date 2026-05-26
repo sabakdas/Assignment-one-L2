@@ -11,9 +11,9 @@ TypeScript will not complain because any disables type checking.
 
 In typescript `any` type tells the compiler to skip type checking for a particular variable.
 
-```let v: any = true;
+`let v: any = true;
 v = "string"; // no error as it can be `any` type
-Math.round(v); // no error as it can be `any` type```
+Math.round(v); // no error as it can be `any` type`
 
 This code compiles successfully, but at runtime it will crash.The question is why?Because:
 `v = "string";` is invalid due to type 'string' is not assignable to type `boolean`.Secondly,`Math.round(v);` is invalid because of argument of type 'boolean' is not assignable to parameter of type `number`.Normally, TypeScript would catch this error during development. But because we used any, TypeScript stopped checking the type completely.Inconclusion, That is why sometimes it called as “Type Safety Hole” Because unsafe values can silently pass through in code and cause bugs later.
