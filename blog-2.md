@@ -65,7 +65,7 @@ The same function works perfectly for both numbers and strings while maintaining
 
 Generics solve two major problems in development:
 
-1. Code Reusability
+**1. Code Reusability**
 Without Generics, developers often write duplicate functions.
 
 Example:
@@ -81,7 +81,7 @@ function getFirstItem<T>(arr: T[]) {}
 ```
 One function handles everything.This keeps the code cleaner and easier to manage.
 
-2. Type Safety
+**2. Type Safety**
 
 Unlike any, Generics do not lose type information.
 
@@ -91,7 +91,7 @@ const result = getFirstItem(["hello"]);
 result.toUpperCase();
 ```
 TypeScript knows result is a string, so it safely allows string methods.
-This improves:
+This improves:<br/>
 **1.autocomplete<br/>
   2.error detection<br/>
   3.developer productivity<br/>
@@ -127,7 +127,7 @@ Because numbers do not have a length property.Constraints make Generics even mor
 
 `Generics` are widely used in frameworks like React, Next.js, NestJS, and many libraries.For example, reusable React components often use Generics to support multiple types of data safely.
 
-This makes applications:
+This makes applications:<br/>
 **scalable <br/>
   maintainable<br/>
   easier to extend**
@@ -135,7 +135,7 @@ This makes applications:
 ## Conclusion
 Generics are one of the reasons TypeScript is so powerful for modern application development.They allow developers to build reusable functions, classes, and components without sacrificing type safety.
 
-they are talking like this:
+they are talking like this:<br/>
 `any`: I ignores types <br/>
 `Generics`: I preserve types
 
